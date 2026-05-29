@@ -1,0 +1,37 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+  .eg-wrap { padding: 1rem 0; font-family: 'Open Sans', sans-serif; font-size: 13px; max-width: 150px; }
+  .status-bar { background: #D7E5FF; border-radius: var(--border-radius-md); padding: 0.6rem 0.75rem; margin-bottom: 0.6rem; display: flex; align-items: flex-start; gap: 6px; }
+  .status-bar i { color: #246EFF; font-size: 14px; margin-top: 2px; flex-shrink: 0; }
+  .status-bar strong { font-size: 13px; font-weight: 600; color: #1a1a1a; display: block; margin-bottom: 4px; font-family: 'Open Sans', sans-serif; }
+  .status-bar ul { margin: 0; padding-left: 1rem; }
+  .status-bar li { margin-bottom: 3px; font-size: 13px; color: #1a1a1a; line-height: 1.5; }
+  .next-step-box { border: 0.5px solid #246EFF; border-top: 2.5px solid #246EFF; border-radius: 0 0 var(--border-radius-md) var(--border-radius-md); padding: 0.6rem 0.75rem; }
+  .next-label { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #246EFF; margin-bottom: 4px; display: flex; align-items: center; gap: 4px; font-family: 'Open Sans', sans-serif; animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both; animation-delay: 0.3s; }
+  .next-label i { font-size: 12px; }
+  .next-text { font-size: 13px; line-height: 1.5; color: var(--color-text-primary); margin: 0; font-family: 'Open Sans', sans-serif; }
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.7) translateY(4px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+</style>
+
+<div class="eg-wrap">
+  <h2 class="sr-only">Revised eLearning course text block</h2>
+  <div class="status-bar">
+    <i class="ti ti-circle-check" aria-hidden="true"></i>
+    <div>
+      <strong>We're making great progress! At this point:</strong>
+      <ul>
+        <li>All hardware is installed (except flavor boxes)</li>
+        <li>The Head Unit and Compact Chiller are powered on</li>
+        <li>The CO2 and water are still off and will not be turned on until the Install Wizard says so</li>
+      </ul>
+    </div>
+  </div>
+  <div class="next-step-box">
+    <div class="next-label"><i class="ti ti-arrow-right" aria-hidden="true"></i> Your next step</div>
+    <p class="next-text">Work through each step of the <strong>Install Wizard</strong> in the walkthrough below. It'll guide you through the rest of the setup.</p>
+  </div>
+</div>
